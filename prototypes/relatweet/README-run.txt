@@ -39,7 +39,7 @@ b)Running the Server and Speed Layer:
 3-Run node.js app ($ node src/main/webapp/app.js)
 4-Run topology of speed and server layer
 
-mvn compile exec:java -Dexec.classpathScope=compile -Dexec.mainClass=org.seerc.relate.relatweet.lambda.server.LambdaWordCounterTopology
+mvn compile exec:java -Dexec.classpathScope=compile -Dexec.mainClass=es.josemalvarez.relatweet.lambda.server.LambdaWordCounterTopology
 
 c)Show results
 
