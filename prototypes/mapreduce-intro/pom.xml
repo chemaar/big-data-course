@@ -8,6 +8,11 @@
 	<packaging>jar</packaging>
 	<description>Big Data Course MAP REDUCE TUTORIAL, library</description>
 	
+<properties>
+        <slf4j.version>1.7.0</slf4j.version>
+  </properties>
+  
+  
 <dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -35,6 +40,27 @@
 			<version>1.0.3</version>
 			<scope>provided</scope>
 		</dependency>
+		
+		 <dependency>
+        	<groupId>com.likethecolor</groupId>
+        	<artifactId>alchemy</artifactId>
+        	<version>1.0</version>
+    	</dependency>
+    
+         <!-- Logging -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>${slf4j.version}</version>
+      <scope>test</scope>
+    </dependency>
+    
+    
   	</dependencies>
 
 	<pluginRepositories>
