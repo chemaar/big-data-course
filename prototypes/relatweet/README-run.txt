@@ -26,7 +26,7 @@ $HADOOP_HOME/bin/hadoop fs -cat output/part-r-00000
 6.1-bin/splout-service.sh qnode start
 6.2-bin/splout-service.sh dnode start
 6.3-Edit hadoop script: exec "$JAVA" $JAVA_HEAP_MAX $HADOOP_OPTS -Djava.library.path=/home/chema/develop/tools/sqlite4java-282 -classpath "$CLASSPATH" (only to ensure the Java library path is correct)
-6.4-hadoop jar splout-hadoop-0.2.1-hadoop.jar simple-generate -i /home/chema/projects/seqos/prototypes/relatweet/output/part-r-00000 -o out-words -pby word -p 2 -s "word:string,count:int" --index "word" -t words -tb words
+6.4-hadoop jar splout-hadoop-0.2.1-hadoop.jar simple-generate -i /home/chema/projects/lambda-course/prototypes/relatweet/output/part-r-00000 -o out-words -pby word -p 2 -s "word:string,count:int" --index "word" -t words -tb words
 6.5-hadoop jar splout-hadoop-*-hadoop.jar deploy -q http://localhost:4412 -root out-words -ts words
 6.6 Check http://localhost:4412
 6.7 Remember to remove the dir out-words
