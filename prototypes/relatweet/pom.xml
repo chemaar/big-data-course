@@ -256,13 +256,12 @@
 			<version>3.2.1</version>
 		</dependency>
 
-		 <dependency>
-		    <groupId>org.yaml</groupId>
-		    <artifactId>snakeyaml</artifactId>
-		    <version>1.12-SNAPSHOT</version>
-		  </dependency>
-		  
-		  
+		  <dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xerces</artifactId>
+			<version>2.4.0</version>
+		</dependency>
+            
 
 	</dependencies>
 
@@ -447,7 +446,7 @@
 					</descriptors>
 					<archive>
 						<manifest>
-							<mainClass>es.josemalvarez.toylambda.lambda.batch.WordCount</mainClass>
+							<mainClass>es.josemalvarez.relatweet.lambda.batch.WordCount</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
